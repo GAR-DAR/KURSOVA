@@ -1,0 +1,106 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Color Palette -->
+
+    <SolidColorBrush x:Key="WindowBackground" Color="#181520" />
+    
+    <SolidColorBrush x:Key="WindowHeaderForeground" Color="#FFFF" />
+    <SolidColorBrush x:Key="WindowBrightHeaderBackground" Color="#9780d7" />
+
+    <!-- Button Style -->
+
+  
+   
+    <SolidColorBrush x:Key="ButtonForeground" Color="#FFF" />
+
+    <SolidColorBrush x:Key="AlertButtonBackground" Color="#964F5F" />
+
+    <!-- TextBox Style -->
+
+  
+    <SolidColorBrush x:Key="TextBoxForeground" Color="#8f8d93" />
+
+    
+
+    <!-- List View -->
+
+   
+
+
+
+
+    <!-- Delete -->
+
+
+
+    <SolidColorBrush x:Key="SliderForeground" Color="#8f8d93" />
+
+
+
+
+
+    <!-- Gradient -->
+
+    <LinearGradientBrush x:Key="GradientBackground" StartPoint="0,0" EndPoint="0,5">
+        <GradientStop Color="#1a1625" Offset="0.0" />
+        <GradientStop Color="#2f2b3a" Offset="0.5" />
+    </LinearGradientBrush>
+
+    <!-- Foreground -->
+
+    <SolidColorBrush x:Key="WindowForeground" Color="#FFF" />
+
+    <!-- Window Border -->
+
+    <SolidColorBrush x:Key="WindowBorder" Color="#1a1625" />
+
+    <!-- Slider Style -->
+
+    <SolidColorBrush x:Key="SliderBackground" Color="#2f2b3a" />
+
+    <!-- Central User Control  -->
+
+    <SolidColorBrush x:Key="UserControlBackground" Color="#FFF" Opacity="0.02" />
+
+    
+
+    
+    
+    <!-- TextBox   -->
+
+    <SolidColorBrush x:Key="TextBoxBackground" Color="#2f2b3a" Opacity="0.5"/>
+    
+    <!-- Buttons -->
+
+    <SolidColorBrush x:Key="BrightButtonBackground" Color="#9780d7" Opacity="0.9"/>
+    <SolidColorBrush x:Key="BrightButtonForeground" Color="#181520" />
+
+    <SolidColorBrush x:Key="ButtonBackground" Color="#44414b" />
+    
+    
+   <!-- List View -->
+
+    <SolidColorBrush x:Key="ListItemBackground" Color="#2f2b3a" Opacity="0.5" />
+    
+    
+    <!-- ComboBox -->
+
+    <SolidColorBrush x:Key="ComboBoxBackground" Color="#2f2b3a" Opacity="0.5" />
+    <SolidColorBrush x:Key="ComboBoxDropDown" Color="#2f2b3a" />
+
+    <SolidColorBrush x:Key="ComboBoxIsSelectedBackground" Color="#46424f" />
+    <SolidColorBrush x:Key="ComboBoxBorderIsSelected" Color="#908d96"/>
+
+    <SolidColorBrush x:Key="ComboBoxIsMouseOverBackground" Color="#46424f" />
+
+    <SolidColorBrush x:Key="WatermarkForeground" Color="#908d96"/>
+    
+    <!-- Check box -->
+
+    <SolidColorBrush x:Key="CheckBoxBackground" Color="#2f2b3a" Opacity="0.5"/>
+
+
+
+
+</ResourceDictionary>

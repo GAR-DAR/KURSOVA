@@ -1,0 +1,142 @@
+[
+  {
+    "$type": "Teacher",
+    "Position": "Лектор",
+    "ScientificDegree": "None",
+    "Rank": "Docent",
+    "ScientificWorks": [
+      "Дослідження впливу...",
+      "Методи навчання..."
+    ],
+    "Name": "Олена Коваленко",
+    "Age": 35,
+    "Education": "Master",
+    "WorkExperience": 10
+  },
+  {
+    "$type": "Teacher",
+    "Position": "Лектор",
+    "ScientificDegree": "None",
+    "Rank": "Docent",
+    "ScientificWorks": [
+      "Аналіз методів...",
+      "Сучасні підходи..."
+    ],
+    "Name": "Артем Бондаренко",
+    "Age": 42,
+    "Education": "Master",
+    "WorkExperience": 18
+  },
+  {
+    "$type": "Teacher",
+    "Position": "Доцент",
+    "ScientificDegree": "DoctorofPhilosophy",
+    "Rank": "Docent",
+    "ScientificWorks": [
+      "Дослідження в області...",
+      "Аналіз даних..."
+    ],
+    "Name": "Олексій Мельник",
+    "Age": 38,
+    "Education": "Bachelor",
+    "WorkExperience": 12
+  },
+  {
+    "$type": "Teacher",
+    "Position": "Професор",
+    "ScientificDegree": "DoctorofPhilosophy",
+    "Rank": "Professor",
+    "ScientificWorks": [
+      "Розробка нових методик...",
+      "Теорія навчання..."
+    ],
+    "Name": "Катерина Яремчук",
+    "Age": 36,
+    "Education": "Bachelor",
+    "WorkExperience": 14
+  },
+  {
+    "$type": "Teacher",
+    "Position": "Старший лектор",
+    "ScientificDegree": "DoctorofScience",
+    "Rank": "Docent",
+    "ScientificWorks": [
+      "Інновації в освіті...",
+      "Методики викладання..."
+    ],
+    "Name": "Василь Коваль",
+    "Age": 40,
+    "Education": "Master",
+    "WorkExperience": 15
+  },
+  {
+    "$type": "Teacher",
+    "Position": "Професор",
+    "ScientificDegree": "DoctorofScience",
+    "Rank": "Professor",
+    "ScientificWorks": [
+      "Наукові дослідження...",
+      "Проблеми сучасної освіти..."
+    ],
+    "Name": "Ірина Сидоренко",
+    "Age": 50,
+    "Education": "Master",
+    "WorkExperience": 25
+  },
+  {
+    "$type": "Teacher",
+    "Position": "Професор",
+    "ScientificDegree": "DoctorofScience",
+    "Rank": "Professor",
+    "ScientificWorks": [
+      "Дослідження в освіті...",
+      "Інтеграція технологій..."
+    ],
+    "Name": "Петро Гончар",
+    "Age": 45,
+    "Education": "Master",
+    "WorkExperience": 22
+  },
+  {
+    "$type": "Teacher",
+    "Position": "Доцент",
+    "ScientificDegree": "DoctorofScience",
+    "Rank": "Docent",
+    "ScientificWorks": [
+      "Методи аналізу...",
+      "Сучасні технології..."
+    ],
+    "Name": "Тетяна Левченко",
+    "Age": 33,
+    "Education": "Bachelor",
+    "WorkExperience": 10
+  },
+  {
+    "$type": "Teacher",
+    "Position": "Лектор",
+    "ScientificDegree": "None",
+    "Rank": "SeniorTeacher",
+    "ScientificWorks": [
+      "Курс навчання...",
+      "Викладання основ..."
+    ],
+    "Name": "Олександр Петренко",
+    "Age": 29,
+    "Education": "Master",
+    "WorkExperience": 5
+  },
+  {
+    "$type": "Teacher",
+    "Position": "Професор",
+    "ScientificDegree": "DoctorofPhilosophy",
+    "Rank": "Professor",
+    "ScientificWorks": [
+      "Педагогічні методи...",
+      "Вплив навчання на..."
+    ],
+    "Name": "Вікторія Гудз",
+    "Age": 40,
+    "Education": "Master",
+    "WorkExperience": 15
+  }
+]

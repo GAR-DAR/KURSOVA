@@ -1,0 +1,21 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="pack://application:,,,/Resources/ResourceDictionaries/ColorsAndGeneralSettings/Colors.xaml"/>
+
+        <ResourceDictionary Source="pack://application:,,,/Resources/ResourceDictionaries/Styles/Border.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/Resources/ResourceDictionaries/Styles/Button.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/Resources/ResourceDictionaries/Styles/IconButton.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/Resources/ResourceDictionaries/Styles/CheckBox.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/Resources/ResourceDictionaries/Styles/ComboBox.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/Resources/ResourceDictionaries/Styles/DatePicker.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/Resources/ResourceDictionaries/Styles/Grid.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/Resources/ResourceDictionaries/Styles/Image.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/Resources/ResourceDictionaries/Styles/ListView.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/Resources/ResourceDictionaries/Styles/TextBlock.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/Resources/ResourceDictionaries/Styles/TextBox.xaml"/>
+        
+    </ResourceDictionary.MergedDictionaries>
+
+</ResourceDictionary>

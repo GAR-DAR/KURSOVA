@@ -1,0 +1,62 @@
+[
+  {
+    "Name": "Микола Сметана",
+    "Age": 24,
+    "Education": "Master",
+    "WorkExperience": 0
+  },
+  {
+    "Name": "Оксана Дяченко",
+    "Age": 30,
+    "Education": "Bachelor",
+    "WorkExperience": 5
+  },
+  {
+    "Name": "Іван Іваненко",
+    "Age": 28,
+    "Education": "Secondary",
+    "WorkExperience": 3
+  },
+  {
+    "Name": "Олена Давидюк",
+    "Age": 35,
+    "Education": "Master",
+    "WorkExperience": 10
+  },
+  {
+    "Name": "Михайло Король",
+    "Age": 22,
+    "Education": "NoEducation",
+    "WorkExperience": 1
+  },
+  {
+    "Name": "Софія Вільхова",
+    "Age": 40,
+    "Education": "Bachelor",
+    "WorkExperience": 15
+  },
+  {
+    "Name": "Богдан Мартинюк",
+    "Age": 27,
+    "Education": "Master",
+    "WorkExperience": 4
+  },
+  {
+    "Name": "Лариса Гончар",
+    "Age": 33,
+    "Education": "Secondary",
+    "WorkExperience": 8
+  },
+  {
+    "Name": "Ярослав Андріїв",
+    "Age": 29,
+    "Education": "Bachelor",
+    "WorkExperience": 6
+  },
+  {
+    "Name": "Наталя Яцик",
+    "Age": 26,
+    "Education": "Master",
+    "WorkExperience": 2
+  }
+]

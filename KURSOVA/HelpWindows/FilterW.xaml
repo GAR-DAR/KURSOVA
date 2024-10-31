@@ -1,0 +1,218 @@
+﻿<Window x:Class="KURSOVA.HelpWindows.FilterW"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KURSOVA.ViewModels"
+        WindowStyle ="None"
+        Title="Filter" Height="380" Width="380"
+        AllowsTransparency="True"
+        Background ="Transparent"
+        WindowStartupLocation="CenterScreen"
+        mc:Ignorable="d">
+
+    <Border  Background="{StaticResource GradientBackground}"
+           CornerRadius="20"
+           BorderThickness="3"
+           BorderBrush="{StaticResource WindowBorder}" Grid.ColumnSpan="2" Grid.RowSpan="2">
+
+        <Grid>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0 30">
+                <Button Style="{StaticResource EngineerButton}" Margin="30 0" Click="EngineerButton_Click"/>
+                <Button Style="{StaticResource WorkerButton}" Margin="30 0"  Click="WorkerButton_Click"/>
+                <Button Style="{StaticResource TeacherButton}" Margin="30 0"  Click="TeacherButton_Click"/>
+                
+            </StackPanel>
+
+            <Grid Margin="0 80 0 60">
+
+           
+
+                <StackPanel x:Name="WorkerFilter" Visibility="Visible">
+                        <TextBlock Text ="Ініціали" 
+                                   HorizontalAlignment="Center" 
+                                   Style ="{StaticResource Header}"/>
+
+
+                        <TextBox Style ="{StaticResource TextBox}" 
+                                 Margin="5 0"     
+                                 Text="{Binding W_nameFilter, 
+                                 Mode=TwoWay}"/>
+
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <StackPanel Grid.Column="0">
+
+                                <TextBlock Text ="Вік від" 
+                                           HorizontalAlignment="Center" 
+                                           Style ="{StaticResource Header}" Margin="5"/>
+
+                            <TextBox Style ="{StaticResource TextBox}" 
+                                         Margin="5 0"
+                                         Text="{Binding W_ageFromFilter, 
+                                         Mode=TwoWay}">
+                               
+                            </TextBox>
+
+                            </StackPanel>
+
+                            <StackPanel Grid.Column="1">
+
+                                <TextBlock Text ="Вік до" 
+                                           HorizontalAlignment="Center" 
+                                           Style ="{StaticResource Header}" Margin="5"/>
+
+                                <TextBox Style ="{StaticResource TextBox}" 
+                                         Margin="5 0"
+                                         Text="{Binding W_ageToFilter, 
+                                         Mode=TwoWay}"/>
+
+                            </StackPanel>
+
+                        </Grid>
+
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <StackPanel Grid.Column="0">
+
+                                <TextBlock Text ="Стаж від" 
+                                           HorizontalAlignment="Center" 
+                                           Style ="{StaticResource Header}" Margin="5"/>
+
+                                <TextBox Style ="{StaticResource TextBox}" 
+                                         Margin="5 0"
+                                         Text="{Binding W_workExperienceFromFilter, 
+                                         Mode=TwoWay}"/>
+
+                            </StackPanel>
+
+                            <StackPanel Grid.Column="1">
+
+                                <TextBlock Text ="Стаж до" 
+                                           HorizontalAlignment="Center" 
+                                           Style ="{StaticResource Header}" Margin="5"/>
+
+                                <TextBox Style ="{StaticResource TextBox}" 
+                                         Margin="5 0"
+                                         Text="{Binding W_workExperienceToFilter, 
+                                         Mode=TwoWay}"/>
+
+                            </StackPanel>
+
+                        </Grid>
+
+
+                </StackPanel>
+
+                <StackPanel x:Name="TeacherFilter" Visibility="Collapsed">
+                    <TextBlock Text ="Посада" 
+                               HorizontalAlignment="Center" 
+                               Style ="{StaticResource Header}"/>
+
+
+                    <TextBox Style ="{StaticResource TextBox}" 
+                             Margin="5 0"
+                             Text="{Binding T_positionFilter, 
+                             Mode=TwoWay}"/>
+
+                    <TextBlock Text ="Науковий ступінь" 
+                                    HorizontalAlignment="Center" 
+                                    Style ="{StaticResource Header}" Margin="5 10"/>
+
+                    <ComboBox  Style="{DynamicResource ComboBoxStyle}" 
+                                   SelectedIndex="0"
+                                   Margin="5 0"
+                                   ItemsSource="{Binding Source={x:Static local:TeacherVM.ScientificDegrees}}"
+                                   SelectedItem="{Binding T_scientificDegreeFilter, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                   Tag="Науковий ступінь"
+                                   x:Name="CB_ScientificDegree">
+
+                    </ComboBox>
+
+                </StackPanel>
+
+                <StackPanel x:Name="EngineerFilter" Visibility="Collapsed">
+                    
+                    <TextBlock Text ="Категорія" 
+                               HorizontalAlignment="Center" 
+                               Style ="{StaticResource Header}"
+                               Margin="0 5 0 10"/>
+
+                    <ComboBox   Style="{DynamicResource ComboBoxStyle}" 
+                                SelectedIndex="0"
+                                Margin="5 0"
+                                ItemsSource="{Binding Source={x:Static local:EngineerVM.Categories}}"
+                                SelectedItem="{Binding E_categoryFilter, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                Tag="Кетегорія"
+                                x:Name="CB_Category">
+
+                    </ComboBox>
+
+                    <TextBlock Text ="Освітні програми" 
+                           HorizontalAlignment="Center" 
+                           Style ="{StaticResource Header}"/>
+
+                    <TextBox Style ="{StaticResource TextBox}" 
+                         Margin="5 0"
+                         Text="{Binding E_officeProgramsFilter, 
+                         Mode=TwoWay}"
+                         Height="60"
+                         TextWrapping="Wrap"/>
+
+                    <StackPanel Grid.Column="1" Orientation="Horizontal"
+                                HorizontalAlignment="Left" 
+                                VerticalAlignment="Center" Margin="0 10 0 0">
+
+                        <CheckBox Style="{StaticResource DefaultCheckBox}" HorizontalAlignment="Center"
+                              Margin="10 5"  IsChecked="{Binding E_canAdministrateFilter, Mode=TwoWay}"/>
+
+
+
+                        <TextBlock Text ="Вміння адмініструвати" 
+                          HorizontalAlignment="Center" 
+                          Style ="{StaticResource Header}" Margin="5"/>
+
+                    </StackPanel>
+
+                </StackPanel>
+
+
+            </Grid>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button  Grid.Column="1" Style="{StaticResource AlertButton}" 
+                    Content="Скинути"
+                    Width="100"
+                    VerticalAlignment="Bottom"
+                    Margin="5 15"
+                    Click="ResetButton_Click"/>
+
+                <Button Grid.Column="2" Style="{StaticResource DefaultButton}" 
+                    Content="Окей"
+                    Width="100"
+                    VerticalAlignment="Bottom"
+                   
+                    Margin="5 15"
+                    Click="OkButton_Click"/>
+
+            </Grid>
+
+        </Grid>
+        
+    </Border>
+</Window>

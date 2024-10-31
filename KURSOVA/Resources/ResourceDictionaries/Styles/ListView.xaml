@@ -1,0 +1,86 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="../ColorsAndGeneralSettings/Colors.xaml"/>
+        
+        <ResourceDictionary Source="TextBlock.xaml"/>
+        <ResourceDictionary Source="Button.xaml"/>
+        <ResourceDictionary Source="IconButton.xaml"/>
+        <ResourceDictionary Source="CheckBox.xaml"/>
+        <ResourceDictionary Source="Image.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+
+
+    <!-- ListView -->
+
+    <Style x:Key ="DefaultListViewStyle" TargetType="ListView">
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="Margin" Value="10"/>
+        <Setter Property ="BorderThickness" Value="0"/>
+        <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Hidden"/>
+        <Setter Property="ScrollViewer.VerticalScrollBarVisibility" Value="Hidden"/>
+    </Style>
+
+    <!-- List Item -->
+
+    <Style x:Key="ListItemStyle" TargetType="ListViewItem">
+        
+       
+
+        <Setter Property="Background" Value="{StaticResource ListItemBackground}"/>
+        <Setter Property="Margin" Value="4"/>
+        <Setter Property="Template">
+            
+            
+            
+            <Setter.Value>
+                <ControlTemplate TargetType="ListViewItem">
+                    <Border x:Name ="border"  Background="{TemplateBinding Background}" 
+                         BorderBrush="{TemplateBinding BorderBrush}" 
+                         BorderThickness="{TemplateBinding BorderThickness}" 
+                         Style="{StaticResource ExtremeRoundedBorder}"
+                         Padding="3 0">
+                        
+                        
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Button x:Name="WorkerTypeButton" Grid.Column="0" HorizontalAlignment="Left"
+                                    Style="{StaticResource WorkerButton}" 
+                                    Height="20" 
+                                    Width="20" 
+                                    Margin="5 0">
+                                
+                            </Button>
+
+
+                            <TextBlock x:Name="ListItemTextBlock" Grid.Column="1" VerticalAlignment="Center"
+                                    Style="{StaticResource DefaultTextBlock}"
+                                    Margin="5 0"
+                                    Text="{Binding Name, Mode =TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                            
+                            <Button x:Name="EditButton" Grid.Column="2" Style="{StaticResource MoreButton}">
+                               
+                            </Button>
+                        </Grid>
+                    </Border>
+
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="border" Property="Opacity" Value="0.7"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                    
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+
+</ResourceDictionary>

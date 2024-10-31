@@ -1,0 +1,97 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+	  
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+	<EnableUnsafeBinaryFormatterSerialization>true</EnableUnsafeBinaryFormatterSerialization>
+
+  </PropertyGroup>
+
+	<ItemGroup>
+    <None Remove="Resources\Images\ProgressView\circle.png" />
+    <None Remove="Resources\Images\ProgressView\circle_click.png" />
+    <None Remove="Resources\Images\ProgressView\circle_mouseOver.png" />
+    <None Remove="Resources\Images\SideBarIcons\add.png" />
+    <None Remove="Resources\Images\SideBarIcons\add_click.png" />
+    <None Remove="Resources\Images\SideBarIcons\filter.png" />
+    <None Remove="Resources\Images\SideBarIcons\filter_click.png" />
+    <None Remove="Resources\Images\SideBarIcons\grouping.png" />
+    <None Remove="Resources\Images\SideBarIcons\grouping_click.png" />
+    <None Remove="Resources\Images\SideBarIcons\openSidebar.png" />
+    <None Remove="Resources\Images\SideBarIcons\openSideBar_click.png" />
+    <None Remove="Resources\Images\SideBarIcons\save.png" />
+    <None Remove="Resources\Images\SideBarIcons\save_click.png" />
+    <None Remove="Resources\Images\SideBarIcons\search.png" />
+    <None Remove="Resources\Images\SideBarIcons\search_click.png" />
+    <None Remove="Resources\Images\SideBarIcons\settings.png" />
+    <None Remove="Resources\Images\SideBarIcons\settings_click.png" />
+    <None Remove="Resources\Images\SideBarIcons\upload.png" />
+    <None Remove="Resources\Images\SideBarIcons\upload_click.png" />
+    <None Remove="Resources\Images\TaskView\calendar.png" />
+    <None Remove="Resources\Images\TaskView\calendar_click.png" />
+    <None Remove="Resources\Images\TaskView\more.png" />
+    <None Remove="Resources\Images\TaskView\more_click.png" />
+    <None Remove="Resources\Images\WindowControls\close_window.png" />
+    <None Remove="Resources\Images\WindowControls\close_window_click.png" />
+    <None Remove="Resources\Images\WindowControls\maximize_window.png" />
+    <None Remove="Resources\Images\WindowControls\maximize_window_click.png" />
+    <None Remove="Resources\Images\WindowControls\minimize_window.png" />
+    <None Remove="Resources\Images\WindowControls\minimize_window_click.png" />
+    <None Remove="Resources\Images\Workers\engineer.png" />
+    <None Remove="Resources\Images\Workers\engineer_click.png" />
+    <None Remove="Resources\Images\Workers\teacher.png" />
+    <None Remove="Resources\Images\Workers\teacher_click.png" />
+    <None Remove="Resources\Images\Workers\worker.png" />
+    <None Remove="Resources\Images\Workers\worker_click.png" />
+  </ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="System.Text.Json" Version="8.0.5" />
+	</ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Images\SideBarIcons\add.png" />
+    <Resource Include="Resources\Images\SideBarIcons\add_click.png" />
+    <Resource Include="Resources\Images\SideBarIcons\grouping.png" />
+    <Resource Include="Resources\Images\SideBarIcons\grouping_click.png" />
+    <Resource Include="Resources\Images\Workers\engineer_click.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Images\ProgressView\circle.png" />
+    <Resource Include="Resources\Images\ProgressView\circle_click.png" />
+    <Resource Include="Resources\Images\ProgressView\circle_mouseOver.png" />
+    <Resource Include="Resources\Images\SideBarIcons\filter.png" />
+    <Resource Include="Resources\Images\SideBarIcons\filter_click.png" />
+    <Resource Include="Resources\Images\SideBarIcons\openSidebar.png" />
+    <Resource Include="Resources\Images\SideBarIcons\openSideBar_click.png" />
+    <Resource Include="Resources\Images\SideBarIcons\save.png" />
+    <Resource Include="Resources\Images\SideBarIcons\save_click.png" />
+    <Resource Include="Resources\Images\SideBarIcons\search.png" />
+    <Resource Include="Resources\Images\SideBarIcons\search_click.png" />
+    <Resource Include="Resources\Images\SideBarIcons\settings.png" />
+    <Resource Include="Resources\Images\SideBarIcons\settings_click.png" />
+    <Resource Include="Resources\Images\SideBarIcons\upload.png" />
+    <Resource Include="Resources\Images\SideBarIcons\upload_click.png" />
+    <Resource Include="Resources\Images\TaskView\calendar.png" />
+    <Resource Include="Resources\Images\TaskView\calendar_click.png" />
+    <Resource Include="Resources\Images\TaskView\more.png" />
+    <Resource Include="Resources\Images\TaskView\more_click.png" />
+    <Resource Include="Resources\Images\WindowControls\close_window.png" />
+    <Resource Include="Resources\Images\WindowControls\close_window_click.png" />
+    <Resource Include="Resources\Images\WindowControls\maximize_window.png" />
+    <Resource Include="Resources\Images\WindowControls\maximize_window_click.png" />
+    <Resource Include="Resources\Images\WindowControls\minimize_window.png" />
+    <Resource Include="Resources\Images\WindowControls\minimize_window_click.png" />
+    <Resource Include="Resources\Images\Workers\engineer.png" />
+    <Resource Include="Resources\Images\Workers\teacher.png" />
+    <Resource Include="Resources\Images\Workers\teacher_click.png" />
+    <Resource Include="Resources\Images\Workers\worker.png" />
+    <Resource Include="Resources\Images\Workers\worker_click.png" />
+  </ItemGroup>
+
+</Project>

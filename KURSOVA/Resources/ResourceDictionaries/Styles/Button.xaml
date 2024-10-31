@@ -1,0 +1,282 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="../ColorsAndGeneralSettings/Colors.xaml"/>
+
+        <ResourceDictionary Source="Border.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+
+
+    <Style x:Key="ImageButton"  TargetType="Button">
+        <Setter Property="Background" Value="{StaticResource ButtonBackground }" />
+        <Setter Property="Margin" Value="3 5" />
+        
+        
+    </Style>
+
+
+
+
+
+
+    <!-- ======================================================================================================= -->
+
+   
+
+    <Style x:Key="IconButton" TargetType="Button">
+        <Setter Property="Height" Value="25" />
+        <Setter Property="Width" Value="25" />
+        <Setter Property="HorizontalAlignment" Value="Right" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="SnapsToDevicePixels" Value="True" />
+        <Setter Property="Cursor" Value="Hand" />
+        <Setter Property="Margin" Value="5 5 5 5"/>
+    </Style>
+
+    <Style x:Key="LargeIconButton" TargetType="Button">
+        <Setter Property="Height" Value="40" />
+        <Setter Property="Width" Value="40" />
+        <Setter Property="HorizontalAlignment" Value="Right" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="SnapsToDevicePixels" Value="True" />
+        <Setter Property="Cursor" Value="Hand" />
+        <Setter Property="Margin" Value="5 5 5 5"/>
+    </Style>
+
+    <!-- WindowControls -->   
+
+    
+    <!-- More Button -->
+
+    <ImageBrush x:Key="MoreImage" ImageSource="../../../Resources/Images/TaskView/more.png"/>
+    <ImageBrush x:Key="MoreClickImage" ImageSource="../../../Resources/Images/TaskView/more_click.png"/>
+
+
+    <Style x:Key="MoreButton" TargetType="Button" BasedOn="{StaticResource IconButton}">
+        <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="HorizontalAlignment" Value="Center" />
+        <Setter Property="Height" Value="20"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border x:Name="border" BorderThickness="0" Background="{StaticResource MoreImage}"/>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="border" Property="Background" Value="{StaticResource MoreClickImage}"/>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="border" Property="Background" Value="{StaticResource MoreClickImage}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    
+    <!-- Calendar Button-->
+
+
+    <ImageBrush x:Key="CalendarImage" ImageSource="../../../Resources/Images/TaskView/calendar.png"/>
+    <ImageBrush x:Key="CalendarClickImage" ImageSource="../../../Resources/Images/TaskView/calendar_click.png"/>
+
+
+    <Style x:Key="CalendarButton" TargetType="Button" BasedOn="{StaticResource IconButton}">
+        <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="HorizontalAlignment" Value="Center" />
+        <Setter Property="Height" Value="20"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border x:Name="border" BorderThickness="0" Background="{StaticResource CalendarImage}"/>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="border" Property="Background" Value="{StaticResource CalendarClickImage}"/>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="border" Property="Background" Value="{StaticResource CalendarClickImage}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+
+
+    <!-- ======================================================================================================= -->
+    
+    
+    
+    <!-- Cicle Button -->
+
+    <ImageBrush x:Key="CircleImage" ImageSource="../../../Resources/Images/ProgressView/circle.png"/>
+    <ImageBrush x:Key="CircleMouseOverImage" ImageSource="../../../Resources/Images/ProgressView/circle_mouseOver.png"/>
+    <ImageBrush x:Key="CircleClickImage" ImageSource="../../../Resources/Images/ProgressView/circle_click.png"/>
+
+    <Style x:Key="CircleButton" TargetType="Button" BasedOn="{StaticResource IconButton}">
+        <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="HorizontalAlignment" Value="Center" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border x:Name="border" BorderThickness="0" Background="{StaticResource CircleImage}">
+                       
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="border" Property="Background" Value="{StaticResource CircleMouseOverImage}" />
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="border" Property="Background" Value="{StaticResource CircleClickImage}" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+
+
+    <!-- General buttons -->
+
+    <Style x:Key="BrightButton" TargetType="Button">
+        <Setter Property="Background" Value="{StaticResource BrightButtonBackground }" />
+        <Setter Property="Foreground" Value="{StaticResource BrightButtonForeground}" />
+        <Setter Property="BorderBrush" Value="{StaticResource WindowBorder}" />
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="Padding" Value="5" />
+        <Setter Property="FontWeight" Value="DemiBold" />
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="Height" Value="25" />
+        <Setter Property="Margin" Value="6 3"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border x:Name ="border"  BorderThickness="{TemplateBinding BorderThickness}" 
+                             Background="{TemplateBinding Background}" 
+                             BorderBrush="{TemplateBinding BorderBrush}" 
+                             Opacity="0.6"
+                             CornerRadius="15">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                    
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="border" Property="Opacity" Value="0.8"/>
+                        </Trigger>
+                       
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+       
+    </Style>
+
+
+    <Style x:Key="DefaultButton" TargetType="Button">
+        <Setter Property="Background" Value="{StaticResource ButtonBackground }" />
+        <Setter Property="Foreground" Value="{StaticResource WindowForeground}" />
+        <Setter Property="BorderBrush" Value="{StaticResource WindowBorder}" />
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="Padding" Value="5" />
+        <Setter Property="FontWeight" Value="DemiBold" />
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="Height" Value="25" />
+        <Setter Property="Margin" Value="6 3"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border x:Name ="border"  BorderThickness="{TemplateBinding BorderThickness}" 
+                             Background="{TemplateBinding Background}" 
+                             BorderBrush="{TemplateBinding BorderBrush}" 
+                             Opacity="0.6"
+                             CornerRadius="15">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="border" Property="Opacity" Value="0.8"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+
+    </Style>
+
+
+    <Style x:Key="AlertButton" TargetType="Button">
+        <Setter Property="Background" Value="{StaticResource AlertButtonBackground }" />
+        <Setter Property="Foreground" Value="{StaticResource WindowForeground}" />
+        <Setter Property="BorderBrush" Value="{StaticResource WindowBorder}" />
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="Padding" Value="5" />
+        <Setter Property="FontWeight" Value="DemiBold" />
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="Height" Value="25" />
+        <Setter Property="Margin" Value="6 3"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border x:Name ="border"  BorderThickness="{TemplateBinding BorderThickness}" 
+                         Background="{TemplateBinding Background}" 
+                         BorderBrush="{TemplateBinding BorderBrush}" 
+                         Opacity="0.6"
+                         CornerRadius="15">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="border" Property="Opacity" Value="0.8"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+
+    </Style>
+
+
+    <Style x:Key="SliderButton" TargetType="Button">
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="Foreground" Value="{StaticResource WindowForeground}" />
+        <Setter Property="BorderThickness" Value="0" />
+        
+        <Setter Property="FontWeight" Value="DemiBold" />
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="Margin" Value="0 5"/>
+
+        
+        <Setter Property="Height" Value="25"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="HorizontalAlignment" Value="Left"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border x:Name ="border"  BorderThickness="{TemplateBinding BorderThickness}" 
+                      Background="{TemplateBinding Background}" 
+                      BorderBrush="{TemplateBinding BorderBrush}" 
+                      Opacity="0.6"
+                      CornerRadius="15">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="border" Property="Opacity" Value="0.8"/>
+                        </Trigger>
+
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+
+    </Style>
+
+
+
+
+</ResourceDictionary>

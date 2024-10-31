@@ -1,0 +1,142 @@
+[
+  {
+    "$type": "Engineer",
+    "CanAdministrate": true,
+    "Category": "Mechanical",
+    "YearOfAtestation": 2022,
+    "OfficeProgramsKnowledge": [
+      "Компас-3D",
+      "Т-FLEX"
+    ],
+    "Name": "Олександр Бондар",
+    "Age": 28,
+    "Education": "Master",
+    "WorkExperience": 3
+  },
+  {
+    "$type": "Engineer",
+    "CanAdministrate": false,
+    "Category": "Civil",
+    "YearOfAtestation": 2021,
+    "OfficeProgramsKnowledge": [
+      "Архікад",
+      "Ревіт"
+    ],
+    "Name": "Максим Галай",
+    "Age": 31,
+    "Education": "Bachelor",
+    "WorkExperience": 6
+  },
+  {
+    "$type": "Engineer",
+    "CanAdministrate": false,
+    "Category": "Mechanical",
+    "YearOfAtestation": 2020,
+    "OfficeProgramsKnowledge": [
+      "Компас-3D",
+      "Т-FLEX"
+    ],
+    "Name": "Катерина Кравець",
+    "Age": 29,
+    "Education": "Bachelor",
+    "WorkExperience": 5
+  },
+  {
+    "$type": "Engineer",
+    "CanAdministrate": true,
+    "Category": "Civil",
+    "YearOfAtestation": 2021,
+    "OfficeProgramsKnowledge": [
+      "Ревіт",
+      "Архікад"
+    ],
+    "Name": "Володимир Кушнір",
+    "Age": 29,
+    "Education": "Master",
+    "WorkExperience": 4
+  },
+  {
+    "$type": "Engineer",
+    "CanAdministrate": true,
+    "Category": "Electrical",
+    "YearOfAtestation": 2018,
+    "OfficeProgramsKnowledge": [
+      "LabVIEW",
+      "Multisim"
+    ],
+    "Name": "Іван Руденко",
+    "Age": 37,
+    "Education": "Master",
+    "WorkExperience": 12
+  },
+  {
+    "$type": "Engineer",
+    "CanAdministrate": true,
+    "Category": "Mechanical",
+    "YearOfAtestation": 2019,
+    "OfficeProgramsKnowledge": [
+      "Компас-3D",
+      "NX"
+    ],
+    "Name": "Дмитро Нечай",
+    "Age": 40,
+    "Education": "Master",
+    "WorkExperience": 20
+  },
+  {
+    "$type": "Engineer",
+    "CanAdministrate": false,
+    "Category": "Electrical",
+    "YearOfAtestation": 2020,
+    "OfficeProgramsKnowledge": [
+      "LabVIEW",
+      "Multisim"
+    ],
+    "Name": "Ольга Верес",
+    "Age": 32,
+    "Education": "Bachelor",
+    "WorkExperience": 7
+  },
+  {
+    "$type": "Engineer",
+    "CanAdministrate": true,
+    "Category": "Chemical",
+    "YearOfAtestation": 2021,
+    "OfficeProgramsKnowledge": [
+      "ChemOffice",
+      "ACD/Labs"
+    ],
+    "Name": "Ігор Гриценко",
+    "Age": 35,
+    "Education": "Master",
+    "WorkExperience": 10
+  },
+  {
+    "$type": "Engineer",
+    "CanAdministrate": false,
+    "Category": "Civil",
+    "YearOfAtestation": 2022,
+    "OfficeProgramsKnowledge": [
+      "Архікад",
+      "Ревіт"
+    ],
+    "Name": "Наталія Литвин",
+    "Age": 30,
+    "Education": "Bachelor",
+    "WorkExperience": 8
+  },
+  {
+    "$type": "Engineer",
+    "CanAdministrate": true,
+    "Category": "Mechanical",
+    "YearOfAtestation": 2020,
+    "OfficeProgramsKnowledge": [
+      "NX",
+      "Компас-3D"
+    ],
+    "Name": "Андрій Соколов",
+    "Age": 40,
+    "Education": "Master",
+    "WorkExperience": 15
+  }
+]

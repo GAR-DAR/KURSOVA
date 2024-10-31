@@ -1,0 +1,29 @@
+﻿<Window x:Class="KURSOVA.HelpWindows.AddWorker"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KURSOVA.HelpWindows"
+        WindowStyle ="None"
+        Title="Grouping" Height="100" Width="200"
+        AllowsTransparency="True"
+        Background ="Transparent"
+        WindowStartupLocation="CenterScreen"
+        mc:Ignorable="d">
+
+    <Border  Background="{StaticResource GradientBackground}"
+       CornerRadius="20"
+       BorderThickness="3"
+       BorderBrush="{StaticResource WindowBorder}" Grid.ColumnSpan="2" Grid.RowSpan="2">
+
+            <StackPanel Orientation="Horizontal">
+                <Button Style="{StaticResource WorkerButton}" Click="AddWorker_Click"/>
+                <Button Style="{StaticResource EngineerButton}" Margin ="20 5" Content="Engineer" Click="AddEngineer_Click"/>
+            <Button Style="{StaticResource TeacherButton}" Click="AddTeacher_Click"/>
+        </StackPanel>
+        
+    </Border>
+</Window>
+
+
+    

@@ -1,0 +1,38 @@
+﻿<Window x:Class="KURSOVA.HelpWindows.GroupingW"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KURSOVA.HelpWindows"
+        WindowStyle ="None"
+        Title="Grouping" Height="150" Width="380"
+        AllowsTransparency="True"
+        Background ="Transparent"
+        WindowStartupLocation="CenterScreen"
+        mc:Ignorable="d">
+
+    <Border  Background="{StaticResource GradientBackground}"
+           CornerRadius="20"
+           BorderThickness="3"
+           BorderBrush="{StaticResource WindowBorder}" Grid.ColumnSpan="2" Grid.RowSpan="2">
+
+        <Grid>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0 30">
+                <Button Style="{StaticResource TeacherButton}" Margin="30 0"/>
+            </StackPanel>
+
+
+            <Grid Margin="0 60 0 0">
+
+                <Button Style="{StaticResource DefaultButton}" Content="Групувати викладачів за науковим ступенем "
+                        Width="340" Click="GroupButton_Click"/>
+
+            </Grid>
+
+
+          
+            
+        </Grid>
+
+    </Border>
+</Window>

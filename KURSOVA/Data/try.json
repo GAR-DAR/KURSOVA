@@ -1,0 +1,14 @@
+[
+  {
+    "Name": "\u041C\u0438\u043A\u043E\u043B\u0430 \u0421\u043C\u0435\u0442\u0430\u043D\u0430",
+    "Age": 24,
+    "Education": "Master",
+    "WorkExperience": 0
+  },
+  {
+    "Name": "\u041C\u0438\u0445\u0430\u0439\u043B\u043E \u041A\u043E\u0440\u043E\u043B\u044C",
+    "Age": 22,
+    "Education": "NoEducation",
+    "WorkExperience": 1
+  }
+]
